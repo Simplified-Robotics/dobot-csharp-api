@@ -128,7 +128,7 @@ namespace dobot.api
       feedbackData.MessageSize = BitConverter.ToInt16(buffer, iStartIndex); //unsigned short
       iStartIndex += 2;
 
-      for (int i = 0; i < feedbackData.Reserved1.Length; ++i)
+      for (int i = 0; i < feedbackData.Reserved1.Count; ++i)
       {
         feedbackData.Reserved1[i] = BitConverter.ToInt16(buffer, iStartIndex);
         iStartIndex += 2;
@@ -176,121 +176,121 @@ namespace dobot.api
       feedbackData.Reserved5 = BitConverter.ToDouble(buffer, iStartIndex);
       iStartIndex += 8;
 
-      for (int i = 0; i < feedbackData.ToolAccelerometerValues.Length; ++i)
+      for (int i = 0; i < feedbackData.ToolAccelerometerValues.Count; ++i)
       {
         feedbackData.ToolAccelerometerValues[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.ElbowPosition.Length; ++i)
+      for (int i = 0; i < feedbackData.ElbowPosition.Count; ++i)
       {
         feedbackData.ElbowPosition[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.ElbowVelocity.Length; ++i)
+      for (int i = 0; i < feedbackData.ElbowVelocity.Count; ++i)
       {
         feedbackData.ElbowVelocity[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.QTarget.Length; ++i)
+      for (int i = 0; i < feedbackData.QTarget.Count; ++i)
       {
         feedbackData.QTarget[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.QdTarget.Length; ++i)
+      for (int i = 0; i < feedbackData.QdTarget.Count; ++i)
       {
         feedbackData.QdTarget[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.QddTarget.Length; ++i)
+      for (int i = 0; i < feedbackData.QddTarget.Count; ++i)
       {
         feedbackData.QddTarget[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.ITarget.Length; ++i)
+      for (int i = 0; i < feedbackData.ITarget.Count; ++i)
       {
         feedbackData.ITarget[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.MTarget.Length; ++i)
+      for (int i = 0; i < feedbackData.MTarget.Count; ++i)
       {
         feedbackData.MTarget[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.QActual.Length; ++i)
+      for (int i = 0; i < feedbackData.QActual.Count; ++i)
       {
         feedbackData.QActual[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.QdActual.Length; ++i)
+      for (int i = 0; i < feedbackData.QdActual.Count; ++i)
       {
         feedbackData.QdActual[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.IActual.Length; ++i)
+      for (int i = 0; i < feedbackData.IActual.Count; ++i)
       {
         feedbackData.IActual[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.IControl.Length; ++i)
+      for (int i = 0; i < feedbackData.IControl.Count; ++i)
       {
         feedbackData.IControl[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.ToolVectorActual.Length; ++i)
+      for (int i = 0; i < feedbackData.ToolVectorActual.Count; ++i)
       {
         feedbackData.ToolVectorActual[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.TCPSpeedActual.Length; ++i)
+      for (int i = 0; i < feedbackData.TCPSpeedActual.Count; ++i)
       {
         feedbackData.TCPSpeedActual[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.TCPForce.Length; ++i)
+      for (int i = 0; i < feedbackData.TCPForce.Count; ++i)
       {
         feedbackData.TCPForce[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.ToolVectorTarget.Length; ++i)
+      for (int i = 0; i < feedbackData.ToolVectorTarget.Count; ++i)
       {
         feedbackData.ToolVectorTarget[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.TCPSpeedTarget.Length; ++i)
+      for (int i = 0; i < feedbackData.TCPSpeedTarget.Count; ++i)
       {
         feedbackData.TCPSpeedTarget[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.MotorTempetatures.Length; ++i)
+      for (int i = 0; i < feedbackData.MotorTempetatures.Count; ++i)
       {
         feedbackData.MotorTempetatures[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.JointModes.Length; ++i)
+      for (int i = 0; i < feedbackData.JointModes.Count; ++i)
       {
         feedbackData.JointModes[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.VActual.Length; ++i)
+      for (int i = 0; i < feedbackData.VActual.Count; ++i)
       {
         feedbackData.VActual[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
@@ -374,7 +374,7 @@ namespace dobot.api
         iStartIndex += 1;
       }
 
-      for (int i = 0; i < feedbackData.MActual.Length; ++i)
+      for (int i = 0; i < feedbackData.MActual.Count; ++i)
       {
         feedbackData.MActual[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
@@ -392,13 +392,13 @@ namespace dobot.api
       feedbackData.CenterZ = BitConverter.ToDouble(buffer, iStartIndex);
       iStartIndex += 8;
 
-      for (int i = 0; i < feedbackData.UserValu.Length; ++i)
+      for (int i = 0; i < feedbackData.UserValu.Count; ++i)
       {
         feedbackData.UserValu[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.Tools.Length; ++i)
+      for (int i = 0; i < feedbackData.Tools.Count; ++i)
       {
         feedbackData.Tools[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
@@ -407,19 +407,19 @@ namespace dobot.api
       feedbackData.TraceIndex = BitConverter.ToDouble(buffer, iStartIndex);
       iStartIndex += 8;
 
-      for (int i = 0; i < feedbackData.SixForceValue.Length; ++i)
+      for (int i = 0; i < feedbackData.SixForceValue.Count; ++i)
       {
         feedbackData.SixForceValue[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.TargetQuaternion.Length; ++i)
+      for (int i = 0; i < feedbackData.TargetQuaternion.Count(); ++i)
       {
         feedbackData.TargetQuaternion[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;
       }
 
-      for (int i = 0; i < feedbackData.ActualQuaternion.Length; ++i)
+      for (int i = 0; i < feedbackData.ActualQuaternion.Count; ++i)
       {
         feedbackData.ActualQuaternion[i] = BitConverter.ToDouble(buffer, iStartIndex);
         iStartIndex += 8;

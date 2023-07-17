@@ -25,7 +25,7 @@ namespace dobot.api
           mControllerBeans.Add(bean.id, bean);
         }
       }
-      catch (Exception ex)
+      catch (Exception )
       {
       }
     }
@@ -41,7 +41,7 @@ namespace dobot.api
           mServoBeans.Add(bean.id, bean);
         }
       }
-      catch (Exception ex)
+      catch (Exception)
       {
       }
     }
